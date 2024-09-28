@@ -1,0 +1,84 @@
+/* FinanceTracker.css */
+
+.finance-tracker {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  color: #333;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2em;
+  color: #666;
+}
+
+.finance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.finance-table th,
+.finance-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.finance-table th {
+  background-color: #4CAF50; /* Green background */
+  color: white;
+}
+
+.finance-table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Zebra stripes */
+}
+
+.finance-table tr:hover {
+  background-color: #ddd; /* Highlight on hover */
+}
+
+/* PDF specific styles */
+@media print {
+  body {
+    -webkit-print-color-adjust: exact; /* Ensure color styles are retained */
+    color-adjust: exact; /* Ensure color styles are retained */
+  }
+  .finance-table {
+    page-break-inside: auto; /* Prevent page breaks inside table */
+  }
+  .finance-table tr {
+    page-break-inside: avoid; /* Avoid breaking rows */
+    page-break-after: auto; /* Page break after each row */
+  }
+}
+
+.download-btn {
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.download-btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
