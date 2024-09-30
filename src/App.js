@@ -1,11 +1,14 @@
 import React from "react";
 import FinanceTracker from "./Components/FinanceTracker/FinanceTracker";
-import Chart from "./Components/Chart/Chart";
+import Voice from "./Components/Voice/Voice";
 
 const App = () => {
-  return <div>
-    <FinanceTracker/>
-  </div>;
+  return (
+    <div>
+    <Voice/>
+      <FinanceTracker />
+    </div> 
+  );
 };
 
 export default App;
